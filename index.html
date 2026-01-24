@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Pintu UPVC Custom | Crystal Doors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jual pintu UPVC custom untuk kamar mandi & rumah. Tahan air, anti rayap, bisa custom ukuran. Konsultasi via WhatsApp.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jual pintu UPVC custom untuk kamar mandi & rumah. Tahan air, anti rayap, bisa custom ukuran. Area Tangerang & sekitarnya." />
 
-  <!-- Google tag (GA4) -->
+  <!-- ===================== -->
+  <!-- GOOGLE ANALYTICS GA4 -->
+  <!-- ===================== -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0YN76TP6Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,40 +23,46 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
       margin: 0;
       padding: 0;
+      background: #f7f7f7;
       color: #333;
     }
+
     .container {
       max-width: 600px;
       margin: auto;
-      padding: 20px;
+      padding: 24px;
       background: #fff;
     }
+
     h1 {
       font-size: 24px;
       margin-bottom: 10px;
     }
+
     ul {
       padding-left: 18px;
     }
+
+    li {
+      margin-bottom: 6px;
+    }
+
     .btn-wa {
-      display: block;
-      width: 100%;
-      padding: 15px;
       margin-top: 20px;
+      width: 100%;
       background: #25D366;
       color: #fff;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
+      padding: 16px;
+      font-size: 16px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
     }
+
     .btn-wa:hover {
-      background: #1ebe5d;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -63,37 +71,39 @@
 
   <div class="container">
     <h1>Pintu UPVC Custom untuk Kamar Mandi & Rumah</h1>
-    <p>
-      Solusi pintu UPVC tahan air & anti rayap, cocok untuk rumah, ruko, dan proyek.
-    </p>
+    <p>Solusi pintu UPVC tahan air & anti rayap, cocok untuk rumah, ruko, dan proyek.</p>
 
     <ul>
-      <li>Tahan air & tidak lapuk</li>
-      <li>Anti rayap & jamur</li>
-      <li>Cocok untuk kamar mandi</li>
-      <li>Desain simpel & rapi</li>
-      <li>Bisa custom ukuran & warna</li>
+      <li>✔ Tahan air & tidak lapuk</li>
+      <li>✔ Anti rayap & jamur</li>
+      <li>✔ Bisa custom ukuran & warna</li>
+      <li>✔ Desain simpel & rapi</li>
     </ul>
 
-    <!-- TOMBOL WA (WAJIB ADA ID) -->
+    <!-- ===================== -->
+    <!-- TOMBOL WHATSAPP -->
+    <!-- ===================== -->
     <button id="btn-wa" class="btn-wa">
       💬 Konsultasi & Harga via WhatsApp
     </button>
   </div>
 
-  <!-- SCRIPT EVENT CLICK WA -->
+  <!-- ===================== -->
+  <!-- EVENT CLICK WHATSAPP -->
+  <!-- ===================== -->
   <script>
     document.getElementById("btn-wa").addEventListener("click", function () {
 
+      // KIRIM EVENT KE GA4
       gtag('event', 'click_wa', {
         event_category: 'whatsapp',
-        event_label: 'landing_page_pintu_upvc'
+        event_label: 'landing_page'
       });
 
-      // Delay agar event terkirim sebelum pindah ke WhatsApp
+      // JEDA AGAR EVENT TERKIRIM
       setTimeout(function () {
         window.location.href = "https://wa.me/6285177434310";
-      }, 600);
+      }, 400);
 
     });
   </script>
